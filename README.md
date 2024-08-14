@@ -22,6 +22,12 @@
 # Build by NPM
 To a smooth and fast development environment, ensure that any changes on the client side are automatically detected and built without the need to repeatedly run 'npm run build'.
 
+> Starting from the root directory, enter the following command in the terminal in `./`.
+
+```cli
+npm run dev
+```
+
 | Type | Description |
 | ---- | ----------- |
 | build | Builds in production mode after undergoing optimization and compression processes for a better user experience.

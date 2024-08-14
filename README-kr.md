@@ -20,9 +20,15 @@
 8. SVG loader `Used by preact-svg-loader`
 
 # Build by NPM
-To a smooth and fast development environment, ensure that any changes on the client side are automatically detected and built without the need to repeatedly run 'npm run build'.
+원활한 개발 환경이 조성되려면 `npm run build`를 반복적으로 입력하지 않고 클라이언트 측의 변경사항이 발생한다면 이를 자동으로 감지하여 빌드될 수 있도록 합니다.
 
-| Type | Description |
+> 최상위 경로부터 시작하여 `./` 에서 아래 명령어를 터미널에 입력하세요.
+
+```cli
+npm run dev
+```
+
+| 유형 | 설명 |
 | ---- | ----------- |
 | build | 높은 사용자 경험을 위해 최적화와 압축 과정을 거친 이후 프로덕션 모드로서 빌드됩니다.
 | build:dev | 최대한 빠르게 빌드되어야 하므로 최적화와 압축 과정이 생략되고 개발 모드로서 빌드됩니다.
