@@ -84,6 +84,26 @@ module.exports = {
     performance: { hints: false },
     optimization: {
         minimize: !isDebug,
-        minimizer: [new TerserPlugin({parallel: true})]
+        minimizer: [
+            new TerserPlugin({
+                parallel: true,
+                terserOptions: {
+                    compress: {
+                        // Remove a unnecessary function arguments.
+                        keep_fargs: true,
+
+                        // In most cases, it is recommended to remove debug-related code because
+                        // the user does not need to debug, but remove it in special cases.
+                        drop_console: true,
+                        drop_debugger: true
+                    },
+                    mangle: {
+                        properties: true,
+                        toplevel: true,
+                        eval: true
+                    }
+                }
+            })
+        ]
     }
 }
