@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f372bc7b-920b-4221-8d06-3d8058a63f9f">
+  <img src="https://github.com/user-attachments/assets/a2e245fd-a4e0-4339-8d4e-6a6a958902f0">
   <h1>Preact with Typescript</h1>
   <span>This is template that is simple start-kit about Preact with Typescript.</span>
 </div>
