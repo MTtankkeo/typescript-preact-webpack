@@ -20,7 +20,7 @@
 8. SVG loader `Used by preact-svg-loader`
 
 # Build by NPM
-To a smooth and fast development environment, ensure that any changes on the client side are automatically detected and built without the need to repeatedly run 'npm run build'.
+To a smooth and fast development environment, ensure that any changes on the client side are automatically detected and built without the need to repeatedly run `npm run build`.
 
 > Starting from the root directory, enter the following command in the terminal in `./`.
 
