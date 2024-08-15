@@ -69,6 +69,7 @@ module.exports = {
         new WebpackHtmlPlugin({
             template: "./src/index.jsp",
             filename: "./index.html",
+            favicon: "./src/assets/favicon.svg",
 
             // When in debug mode, static resources such as CSS or JS are
             // not merged into the document in inline form.

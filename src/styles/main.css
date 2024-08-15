@@ -1,6 +1,9 @@
 
 :root {
+    font-family: "Pretendard";
+    font-weight: normal;
     color: var(--foreground);
 }
 
-body { background-color: var(--background); }
+html { width: 100%; height: 100%; }
+body { width: 100%; height: 100%; margin: 0px; background-color: var(--background); }
