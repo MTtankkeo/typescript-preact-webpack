@@ -1,15 +1,12 @@
-import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import Router, { Route } from "preact-router";
 
 import Logo from "../assets/favicon.svg";
 
 export function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="*" Component={Title} />
-            </Routes>
-        </BrowserRouter>
+        <Router>
+            <Route path="/" component={Title} default />
+        </Router>
     )
 }
 
