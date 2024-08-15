@@ -13,11 +13,12 @@
 1. Webpack `Bundler`
 2. Webpack Dev Server `for hot reload`
 3. Preact
-4. Typescript
-5. Javascript minimizer `Used by terser`
-6. CSS minimizer `Used by 'css-minimizer-webpack-plugin'`
-7. CSS loader
-8. SVG loader `Used by preact-svg-loader`
+4. Precat Router
+5. Typescript
+6. Javascript minimizer `Used by terser`
+7. CSS minimizer `Used by 'css-minimizer-webpack-plugin'`
+8. CSS loader
+9. SVG loader `Used by preact-svg-loader`
 
 # NPM 빌드
 원활한 개발 환경이 조성되려면 `npm run build`를 반복적으로 입력하지 않고 클라이언트 측의 변경사항이 발생한다면 이를 자동으로 감지하여 빌드될 수 있도록 합니다.
