@@ -7,7 +7,7 @@
 <br>
 
 > __현지화 문서 참조__<br>
-> [English (Origin)](README-kr.md)
+> [English (Origin)](https://github.com/MTtankkeo/typescript-preact-webpack)
 
 # 기본 구성
 1. Webpack `Bundler`
