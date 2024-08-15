@@ -98,7 +98,16 @@ module.exports = {
                         drop_console: true,
                         drop_debugger: true
                     },
-                    mangle: {toplevel: true, eval: true}
+                    mangle: {
+                        properties: false,
+                        toplevel: true,
+                        eval: true
+                    },
+                    output: {
+                        // In most cases, No comments providing is required to user.
+                        // So, rather, it is recommended to remove the comments.
+                        comments: false,
+                    }
                 }
             })
         ]
