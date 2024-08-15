@@ -98,11 +98,7 @@ module.exports = {
                         drop_console: true,
                         drop_debugger: true
                     },
-                    mangle: {
-                        properties: true,
-                        toplevel: true,
-                        eval: true
-                    }
+                    mangle: {toplevel: true, eval: true}
                 }
             })
         ]
