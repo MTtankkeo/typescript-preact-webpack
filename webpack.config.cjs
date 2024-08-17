@@ -96,7 +96,9 @@ module.exports = {
                         // In most cases, it is recommended to remove debug-related code because
                         // the user does not need to debug, but remove it in special cases.
                         drop_console: true,
-                        drop_debugger: true
+                        drop_debugger: true,
+                        dead_code: true,
+                        unused: true,
                     },
                     mangle: {
                         properties: false,
