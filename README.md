@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a2e245fd-a4e0-4339-8d4e-6a6a958902f0">
+  <img src="https://github.com/user-attachments/assets/47b9163e-0f1e-4468-be70-dacdbc52b342">
   <h1>Preact with Typescript</h1>
   <span>This is template that is simple start-kit about Preact with Typescript.</span><br>
   <a href="https://github.com/MTtankkeo/preact-typescript-node">Go to related Node.ts template</a>
