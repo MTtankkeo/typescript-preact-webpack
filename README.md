@@ -14,7 +14,7 @@
 1. Webpack `Bundler`
 2. Webpack Dev Server `for hot reload`
 3. Preact
-4. Precat Router
+4. [Wouter](https://www.npmjs.com/package/wouter)
 5. Typescript
 6. Javascript minimizer `Used by terser`
 7. CSS minimizer `Used by 'css-minimizer-webpack-plugin'`

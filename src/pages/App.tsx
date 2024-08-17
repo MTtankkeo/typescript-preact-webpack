@@ -1,12 +1,11 @@
-import Router, { Route } from "preact-router";
-
+import { Route, Switch, useLocation, useRoute } from "wouter";
 import Logo from "../assets/favicon.svg";
 
 export function App() {
     return (
-        <Router>
-            <Route path="/" component={Title} default />
-        </Router>
+        <Switch>
+            <Route path="/" component={Title} />
+        </Switch>
     )
 }
 
