@@ -2,7 +2,8 @@ const Webpack = require('webpack');
 const WebpackHtmlPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CSSMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CSSManglePlugin = require("css-mangle-webpack-plugin").default;
 
 // Whether it is in debug build mode.
 const isDebug = process.env.BUILD_TYPE.includes("dev");
@@ -66,6 +67,7 @@ module.exports = {
                 CSSMinimizerPlugin.cssnanoMinify,
             ]
         }),
+        new CSSManglePlugin(),
         new WebpackHtmlPlugin({
             template: "./src/index.jsp",
             filename: "./index.html",
