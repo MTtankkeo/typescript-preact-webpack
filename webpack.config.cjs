@@ -1,6 +1,6 @@
 const Webpack = require('webpack');
-const WebpackHtmlPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const HTMLInlinePlugin = require("html-inline-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CSSManglePlugin = require("css-mangle-webpack-plugin").default;
@@ -67,18 +67,18 @@ module.exports = {
                 CSSMinimizerPlugin.cssnanoMinify,
             ]
         }),
-        new CSSManglePlugin(),
-        new WebpackHtmlPlugin({
-            template: "./src/index.jsp",
+        new CSSManglePlugin({minify: !isDebug}),
+        new HTMLInlinePlugin({
+            template: "./src/index.html",
             filename: "./index.html",
-            favicon: "./src/assets/favicon.svg",
+            favIcon: "./src/assets/favicon.svg",
 
             // When in debug mode, static resources such as CSS or JS are
             // not merged into the document in inline form.
             //
             // Instead, they are requested asynchronously by the client to track changes.
-            inject: isDebug,
-            minify: false,
+            inline: isDebug == false,
+            pretty: false,
         }),
         new Webpack.DefinePlugin({"process.env.IS_DEBUG": isDebug})
     ],

@@ -2,7 +2,7 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "noImplicitAny": true,
-        "module": "ES2022",
+        "module": "ESNext",
         "target": "ES2015",
         "jsx": "react-jsx",
         "jsxImportSource": "preact",
