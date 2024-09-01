@@ -3,7 +3,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const HTMLInlinePlugin = require("html-inline-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CSSMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const CSSManglePlugin = require("css-mangle-webpack-plugin").default;
+const CSSManglePlugin = require("css-mangle-webpack-plugin");
 
 // Whether it is in debug build mode.
 const isDebug = process.env.BUILD_TYPE.includes("dev");
