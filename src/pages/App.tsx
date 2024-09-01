@@ -1,10 +1,10 @@
-import { Route, Switch, useLocation, useRoute } from "wouter";
+import { Route, Switch } from "wouter";
 import Logo from "../assets/favicon.svg";
 
 export function App() {
     return (
         <Switch>
-            <Route path="/" component={Title} />
+            <Route path="*" component={Title} />
         </Switch>
     )
 }

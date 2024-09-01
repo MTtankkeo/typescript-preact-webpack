@@ -82,7 +82,7 @@ module.exports = {
         }),
         new Webpack.DefinePlugin({"process.env.IS_DEBUG": isDebug})
     ],
-    
+
     // Ignores about assets resource size all. (i.g. font)
     performance: { hints: false },
     optimization: {
