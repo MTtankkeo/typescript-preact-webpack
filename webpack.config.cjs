@@ -43,9 +43,18 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: 'fonts/[name][ext]'
+                    filename: "fonts/[name][ext]"
                 }
             },
+            // To export the image assets files from `src/` to `dist/`.
+            // And by default, extensions are typical extensions supported by Chrome.
+            {
+                test: /\.(png|jpe?g|webp|avif|hei[cf]|gif|bmp|tiff|ico)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "images/[name][ext]"
+                }
+            }
         ]
     },
     resolve: {
