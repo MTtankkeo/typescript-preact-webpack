@@ -1,8 +1,6 @@
 import { Route, Switch } from "wouter";
 import Logo from "../assets/favicon.svg";
 
-import "preact-svg-loader";
-
 export function App() {
     return (
         <Switch>
