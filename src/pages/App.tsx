@@ -20,7 +20,7 @@ export function Title() {
             alignItems: "center",
             gap: "10px",
         }}>
-            <Logo />
+            <Logo width="200px" />
             <h1>Hello, World!</h1>
             <span>{process.env.IS_DEBUG ? "Is Debug Mode" : "Is Release Mode"}</span>
         </div>
