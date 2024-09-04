@@ -83,7 +83,7 @@ module.exports = {
                 CSSMinimizerPlugin.cssnanoMinify,
             ]
         }),
-        new CSSManglePlugin({minify: !isDebug}),
+        new CSSManglePlugin({mangle: !isDebug}),
         new HTMLInlinePlugin({
             template: "./src/index.html",
             filename: "./index.html",
