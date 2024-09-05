@@ -50,17 +50,16 @@ module.exports = {
             // And by default, extensions are typical extensions supported by Chrome.
             {
                 test: /\.(png|jpe?g|webp|avif|hei[cf]|gif|tiff)$/i,
-                type: "asset/resource",
                 use: [{
                     loader: "image-encode-loader",
                     options: {
                         // This format has the best compression rate at the moment.
-                        format: "avif"
+                        format: "avif",
+                        generator: {
+                            filename: "images/[name].[ext]"
+                        }
                     }
                 }],
-                generator: {
-                    filename: "images/[name].avif"
-                }
             }
         ]
     },
