@@ -27,7 +27,7 @@ To a smooth and fast development environment, ensure that any changes on the cli
 > Starting from the root directory, enter the following command in the terminal in `./`.
 
 ```cli
-npm run dev
+npm run serve
 ```
 
 | Type | Description |
@@ -36,4 +36,4 @@ npm run dev
 | build:dev | Needs to be built as quickly as possible, so the optimization and compression steps are skipped and builds in development mode.
 | watch | Builds in production mode, and automatically rebuilds when changes occur.
 | watch:dev | Needs to be built as quickly as possible, so the optimization and compression steps are skipped. Additionally, automatically rebuilds when changes occur.
-| dev | Needs to be built as quickly as possible, so the optimization and compression steps are skipped, and the resources are cached. Additionally, only the changes are rebuilt, and the website automatically refreshes.
+| serve | Needs to be built as quickly as possible, so the optimization and compression steps are skipped, and the resources are cached. Additionally, only the changes are rebuilt, and the website automatically refreshes.

@@ -4,7 +4,7 @@
     "build:dev": "cross-env BUILD_TYPE=deveopment webpack",
     "watch": "cross-env BUILD_TYPE=production webpack --watch",
     "watch:dev": "cross-env BUILD_TYPE=deveopment webpack --watch",
-    "dev": "cross-env BUILD_TYPE=development webpack-dev-server --hot"
+    "serve": "cross-env BUILD_TYPE=development webpack-dev-server --hot"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
