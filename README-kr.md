@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a2e245fd-a4e0-4339-8d4e-6a6a958902f0">
+  <img src="https://github.com/user-attachments/assets/9c15c931-1599-4648-88d0-be1c69414d13">
   <h1>Preact with Typescript</h1>
   <span>이 템플릿은 Preact에서 Typescript 환경을 설정하는 시작 키트입니다.</span>
 </div>
